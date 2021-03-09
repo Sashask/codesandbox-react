@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ColorfulMessage from "./components/ColorfulMessage";
 
 const App = () => {
-  console.log("レンダリング");
+  //console.log("レンダリング");
   const [num, setNum] = useState(0);
   const [faceShowFlag, setFaceShowFlg] = useState(false);
 
@@ -20,8 +20,8 @@ const App = () => {
 
   //渡した配列の中身のステータス変化のみに関心を持たせるレンダリング
   useEffect(() => {
-    console.log("useeffect");
-    if (num > 0 && num % 2 == 0) {
+    //console.log("useeffect");
+    if (num > 0 && num % 2 === 0) {
       //真なら何もしない。偽なら右辺を評価。
       faceShowFlag || setFaceShowFlg(true);
     } else {
